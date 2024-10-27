@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Records Management</h1>
+        <form id="medicalRecordForm">
+            <input type="number" id="residentID" placeholder="Resident ID" required>
+            <input type="number" id="recordID" placeholder="Record ID" required>
+            <select id="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="date" id="date" required>
+            <input type="text" id="doctorName" placeholder="Doctor's Name" required>
+            <textarea id="diagnosis" placeholder="Diagnosis" required></textarea>
+            <textarea id="treatment" placeholder="Treatment" required></textarea>
+        </form>  
+        <h2>Medical Records List</h2>
+        <table id="medicalRecordsTable">
+            <thead>
+                <tr>
+                    <th>Record ID</th>
+                    <th>Resident ID</th>
+                    <th>Date</th>
+                    <th>Doctor's Name</th>
+                    <th>Diagnosis</th>
+                    <th>Treatment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Medical records will be added here -->
+            </tbody>
+        </table>
+    </div>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</body>
+</html>
